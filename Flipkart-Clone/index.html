@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Flipkart</title>
+  </head>
+
+  <body>
+
+    <!---Header Section--->
+    <div class="container-fluid bg-primary header fixed-top">
+      <div class="row d-flex py-2">
+
+        <!----  LOGO ---->
+        <div class="col logo offset-lg-1">
+          <a href="#">
+            <img width="75" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="flipkart">
+          </a>
+
+          <a href="#">
+            Explore <span>Plus</span>
+            <img width="10" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" alt="Plus">
+          </a>
+        </div> 
+
+        <!----  Search ---->
+        <div class="col col-md-4 search d-flex drop">
+          <input class="form-control dropdown-toogle" type="search" placeholder="Search for products, Brand and more" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa-solid fa-magnifying-glass mt-3 ml-sm-1 text-primary"></i>
+
+          <div class="dropdown-menu col-12 search-item" aria-labelledby="navbarDropdown">
+            <h6 class="ml-4">Discover More</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item py-2" href="#"><i class="fa-solid fa-magnifying-glass text-secondary mr-3"></i>Mobile</a>
+            <a class="dropdown-item py-2" href="#"><i class="fa-solid fa-magnifying-glass text-secondary mr-3"></i>Toy</a>
+          </div>
+        </div> 
+
+        <!----  Login ---->
+        <div class="col dropdown login">
+          <button type="button" class="btn btn-light text-primary" id="loginMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</button>
+          <div class="dropdown-menu login-list col-12" aria-labelledby="loginMenuButton">
+            <div class="d-flex">
+              <h6 class="mi-md-1">New Coustomer</h6>
+              <a href="#" class="ml-md-1 mr-2" id="signUp">Sign Up</a>
+              <d class="dropdown-divider"></d>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+              <i class="fa-solid fa-circle-user text-primary mx-2 my-2"></i>
+              <a href="#" class="dropdown-item">My Profile</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+              <i class="fa-solid fa-circle-user text-primary mx-2 my-2"></i>
+              <a href="#" class="dropdown-item">My Profile</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+              <i class="fa-solid fa-plus text-primary mx-2 my-2"></i>
+              <a href="#" class="dropdown-item">Flipkart Zone</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+              <i class="fa-solid fa-book text-primary mx-2 my-2"></i>
+              <a href="#" class="dropdown-item">Book</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+              <i class="fa-solid fa-heart text-primary mx-2 my-2"></i>
+              <a href="#" class="dropdown-item">Wishlist</a>
+            </div>
+          </div>
+        </div>
+        
+        <!----  More ---->
+        <div class="col more">
+          <a class="btn text-white dropdown-toggle" type="button" id="moreMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+          </a>
+          <div class="dropdown-menu more-list" aria-labelledby="moreMenuLink">
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+              <i class="fa-solid fa-bell text-primary mx-2 my-2"></i>
+              <a href="#" class="dropdown-item">Notification Preference</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+              <i class="fa-solid fa-box text-primary mx-2 my-2"></i>
+              <a href="#" class="dropdown-item">Sell on Flipkart</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="d-flex">
+              <i class="fa-solid fa-download text-primary mx-2 my-2"></i>
+              <a href="#" class="dropdown-item">Download App</a>
+            </div>
+          </div>
+        </div> 
+
+        <!----  Cart ---->
+        <div class="col col-md-1 d-flex justify-content-center">
+          <i class="fa-sharp fa-solid fa-cart-shopping text-white mt-2"></i>
+          <a href="" class="btn text-white">Cart</a>
+        </div> 
+      </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+   
+    
+    
+  </body>
+</html>
